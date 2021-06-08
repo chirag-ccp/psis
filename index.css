@@ -1,0 +1,372 @@
+
+/* Navigation Bar */
+.navbar
+{
+  margin-bottom: 2rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  margin: 0 1rem;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: white;
+  text-decoration-line: underline;
+  text-underline-position: below;
+  text-decoration-color: pink;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.navbar-brand
+{
+  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Orbitron', sans-serif; */
+  font-size: 1.5rem;
+}
+
+.dropdown-menu
+{
+  border-radius: 20%;
+  background-color: rgb(255, 10, 161);
+  /* background-color: black; */
+}
+
+.dropdown-item
+{
+  color:white;
+  
+}
+.dropdown-item:hover
+{
+  color:white;
+  background-color: inherit;
+  text-decoration-line: underline;
+  text-underline-position: below;
+  text-decoration-color: rgb(248, 248, 248);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+ul li:hover ul.dropdown-menu {
+  display: block; /* Display the dropdown */
+}
+ul li ul.dropdown-menu li {
+  display: block;
+}
+.navbar-brand
+{
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Heading - Home Page */
+
+.heading{
+  background-color: #21D4FD;
+  background-image: linear-gradient(225deg, #21D4FD 0%, #B721FF 100%);
+  padding-bottom: 2rem;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 4rem;
+}
+
+
+.header-image
+{
+  width:50%;
+  float:left;
+}
+.para-text{
+  font-size: 4rem;
+  font-family: 'Lobster', cursive;
+  padding: 3rem 7rem 5rem 1rem;
+  text-align: right;
+}
+
+/* Gateway - Roadmaps Page */
+.roadmap-gateway
+{
+  background-color: white;
+}
+.roadmap-gateway-para
+{
+  font-size: 3.5rem;
+  text-align: left;
+  float:left;
+  width:50%;
+  padding:0rem 0rem 1rem 7rem;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Limelight', cursive; */
+  font-family: 'Caveat', cursive;
+}
+.roadmap-gateway-image
+{
+  width: 45%;
+  float:left;
+  margin-right:1rem;
+  margin-top: 0.3rem;
+}
+.roadmap-gateway-anchor
+{
+  text-decoration: none;
+  position:absolute;
+  right:6.6%;
+  top: 47.2rem;
+  padding:0.3rem 0.7rem 0.3rem 1.1rem;
+  color:white;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.roadmap-gateway-anchor:hover
+{
+  color:white;
+}
+#roadmap-gateway-wing1
+{
+  color:white;
+  font-size:1rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: #A466FF;
+  position:absolute;
+  right:17.5%;
+  top: 46rem;
+}
+#roadmap-gateway-wing2
+{
+  color:white;
+  font-size:1rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: #A466FF;
+  position:absolute;
+  right:17.5%;
+  top: 47rem;
+}
+#roadmap-gateway-wing3
+{
+  color:white;
+  font-size:1rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: #A466FF;
+  position:absolute;
+  right:17.5%;
+  top: 48rem;
+}
+.roadmap-gateway-wings
+{
+  display:none;
+  
+}
+.roadmap-gateway-anchor:hover + div.roadmap-gateway-wings
+{
+  display:block;
+  
+}
+.div-below-roadmap
+{
+  margin-top: 40rem;
+
+}
+
+
+
+/* Photo Gallery - Guiding page */
+
+  .photo-gal-bg
+  {
+      /* background-image: url(/Media_Final_Project/Background_photo_gallery.jpg); */
+      /* background-size: 100%; */
+      /* background-attachment: fixed; */
+      background-color: lavender;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+
+  
+  .img-left
+  {
+    width:30rem;
+    margin-left:12%;
+    margin-bottom: 3rem;
+    border: 0.7rem ridge rgba(132, 0, 255, 0.993);
+  }
+ 
+  .img-right
+  {
+    width:30rem;
+    margin-left:12%;
+    margin-bottom: 3rem;
+    border: 0.7rem ridge rgba(132, 0, 255, 0.993);
+
+  }
+  .gallery-text
+  {
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    
+  }
+  .img-right:hover
+  {
+    border:0px solid red;
+  }
+  .img-left:hover
+  {
+    border:0px solid red;
+  }
+  
+   /* Gateway - Buy and Sell Page */
+   .buy-and-sell-gateway
+   {
+     /* background-color: lavender; */
+     background-color: white;
+     margin-top: 4rem;
+   }
+
+
+   .buy-and-sell-gateway-image
+   {
+     width: 48%;
+     float: left;
+     margin-left: 1rem;
+   }
+   .buy-and-sell-gateway-para
+   {
+      font-size: 3.5rem;
+      font-family: 'Caveat', cursive;
+      width:48%;
+      float:left;
+      padding: 0rem 0rem 0rem 7rem;
+      line-height: 1.2;
+   }
+
+   .angry-face-books
+   {
+     color:red;
+   }
+
+   .lookup-face-books
+   {
+     color:#f7ea00
+   }
+
+.button {
+  border-radius: 4px;
+  background-color: #A466FF;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Sonsie One', cursive;
+  margin: 2rem 1rem 1rem 7rem;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* Marks Predictor */
+.predictor-gateway
+{
+  background-color: lavender;
+  padding: 3rem 1rem 3rem 0rem;
+}
+.predictor-gateway-image
+{
+  width:50%;
+}
+.predictor-gateway-para
+{
+  width:40%;
+  font-family: 'Caveat', cursive;
+  font-size: 3.5rem;
+  margin: 2rem 1rem 1rem 3rem;
+}
+
+/* Predict gateway - Button */
+
+
+.btnn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  font-family: 'Montserrat';
+  top: 6rem;
+  right: 2rem;
+  text-decoration: none;
+}
+
+.btnn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btnn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #A466FF;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btnn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+a
+{
+  text-decoration: none;
+}

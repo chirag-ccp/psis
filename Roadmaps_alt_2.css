@@ -1,0 +1,155 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar
+{
+  margin-bottom: 2rem;
+  background-color: #A466FF;
+  background-color: #21D4FD;
+  background-image: linear-gradient(225deg, #21D4FD 0%, #B721FF 100%);
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  /* margin-bottom: 4rem; */
+  box-shadow:0px 0.5rem 5px 0px rgb(0 0 0 / 20%);
+  font-size: 0.9rem;
+  color: white;
+}
+.navbar-brand
+{
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  margin: 0 1rem;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: white;
+  text-decoration-line: underline;
+  text-underline-position: below;
+  text-decoration-color: pink;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+
+.dropdown-menu
+{
+  border-radius: 20%;
+  background-color: rgb(255, 10, 161);
+  /* background-color: black; */
+}
+
+.dropdown-item
+{
+  color:white;
+  font-size: 0.9rem;
+}
+.dropdown-item:hover
+{
+  color:white;
+  background-color: inherit;
+  text-decoration-line: underline;
+  text-underline-position: below;
+  text-decoration-color: rgb(248, 248, 248);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+ul li:hover ul.dropdown-menu {
+  display: block; /* Display the dropdown */
+}
+ul li ul.dropdown-menu li {
+  display: block;
+}
+
+/* Page Starts here*/
+
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+
+h4
+{
+  margin:auto;
+  margin-top: 2rem;
+}
