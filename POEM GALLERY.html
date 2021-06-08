@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Linking Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b3a5110d44.js" crossorigin="anonymous"></script>
+  <title>POEM GALLERY</title>
+
+  <style>
+    body {
+      background-color: lavender;
+    }
+
+    /* Navigation Bar */
+
+    .navbar {
+      margin-bottom: 2rem;
+      background-color: #A466FF;
+      background-color: #21D4FD;
+      background-image: linear-gradient(225deg, #21D4FD 0%, #B721FF 100%);
+      padding-bottom: 0rem;
+      padding-top: 0rem;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      /* margin-bottom: 4rem; */
+      box-shadow: 0px 0.5rem 5px 0px rgb(0 0 0 / 20%);
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      color: white;
+      margin: 0 1rem;
+    }
+
+    .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-item:hover .nav-link {
+      color: white;
+      text-decoration-line: underline;
+      text-underline-position: below;
+      text-decoration-color: pink;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 3px;
+    }
+
+
+    .dropdown-menu {
+      border-radius: 20%;
+      background-color: rgb(255, 10, 161);
+      /* background-color: black; */
+    }
+
+    .dropdown-item {
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .dropdown-item:hover {
+      color: white;
+      background-color: inherit;
+      text-decoration-line: underline;
+      text-underline-position: below;
+      text-decoration-color: rgb(248, 248, 248);
+      text-underline-offset: 7px;
+      text-decoration-thickness: 3px;
+    }
+
+    ul li:hover ul.dropdown-menu {
+      display: block;
+      /* Display the dropdown */
+    }
+
+    ul li ul.dropdown-menu li {
+      display: block;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 20px;
+      background-color: #A466FF;
+      padding: 10px;
+
+      ;
+    }
+
+
+
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgb(0, 255, 76);
+      text-align: center;
+      font-size: 30px;
+
+    }
+
+
+    .heading {
+      font-size: 100px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .heading2 {
+      font-size: 50px;
+      align-items: center;
+      text-align: left;
+    }
+
+    #more {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Roadmaps_alt_2.html">Roadmaps</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Art Gallery
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="POEM GALLERY.html">Poems</a></li>
+            <li><a class="dropdown-item" href="PHOTO GALLERY.html">Photographs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="old_books.html">Buy and Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://student-marks-predictor-001.herokuapp.com/predict" target="_blank">Marks
+            Predictor</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+            <li><a class="dropdown-item" href="Our Founder.html">Our Founders</a></li>
+          </ul>
+        </li>
+
+
+      </ul>
+
+    </div>
+    <a class="navbar-brand" href="#"><i class="far fa-user-circle"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <section class="text-gray-600 body-font">
+
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class=heading>POEM GALLERY</h1>
+
+      </div>
+
+
+      <div class="grid-container">
+
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a target="_blank" href="1.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="1.jpg"></a>
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 1</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                <p class="leading-relaxed">
+                <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+
+          <div class="flex relative">
+            <a target="_blank" href="2.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="2.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 2</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <a target="_blank" href="3.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="3.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 3</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <a target="_blank" href="7.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="7.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 4</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <a target="_blank" href="4.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="4.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 5</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <a target="_blank" href="5.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="5.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 6</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <a target="_blank" href="6.jpg">
+              <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="6.jpg"></a>
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Poem 7</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+              <p class="leading-relaxed">
+              <pre>
+किस भांति उठूँ इतना ऊपर?
+मस्तक कैसे छू पाउँ मैं?
+ग्रीवा तक हाथ न जा सकते,
+उँगलियाँ न छू सकती ललाट
+वामन की पूजा किस प्रकार,
+पहुँचे तुम तक मानव विराट?
+रे रोक युधिष्ठर को न यहाँ, जाने दे उनको स्वर्ग धीर
+पर फिरा हमें गांडीव गदा, लौटा दे अर्जुन भीम वीर 
+			   </pre>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</body>
+
+</html>
